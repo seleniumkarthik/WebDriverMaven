@@ -27,7 +27,7 @@ public class LoginTest {
 		driver.findElement(By.xpath("//span[contains(@class,'RveJvd snByac')]")).click();
 		WebDriverWait wait = new WebDriverWait(driver,30); 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@type='password']")));
-		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("dssdff");
+		driver.findElement(By.xpath("//inpu[@type='password']")).sendKeys("dssdff");
 		driver.findElement(By.xpath("(//span[@class='RveJvd snByac'])[1]")).click();
 		// added new comments
 		
