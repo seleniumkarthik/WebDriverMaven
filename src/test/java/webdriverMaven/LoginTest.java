@@ -28,11 +28,12 @@ public class LoginTest {
 		WebDriverWait wait = new WebDriverWait(driver,30); 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@type='password']")));
 		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("dssdff");
+		driver.findElement(By.xpath("(//span[@class='RveJvd snByac'])[1]")).click();
 		
 	}
 	@AfterSuite
 	public void tearDown() {
-		//driver.quit();
+		driver.quit();
 	}
 
 }
